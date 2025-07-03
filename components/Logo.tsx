@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export const Logo = ({ className }: { className?: string }) => {
   return (
-    <Link href={"/"}>
+    <Link href={"/"} className='inline-flex'>
       <h2 className={cn(
         "text-2xl text-shop_dark_red font-black tracking-wider uppercase hover:text-shop_light_red hoverEffect group font-sans",
         className

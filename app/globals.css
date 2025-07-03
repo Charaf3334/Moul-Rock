@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-    --font-poppins: Poppins, sans-serif;
+    --font-poppins: "Poppins", sans-serif;
     --color-shop_light_pink: #fcf0e4;
     --color-shop_dark_red: #3B060A;
     --color-shop_btn_dark_green: #063D29;
@@ -55,6 +55,7 @@
 }
 
 :root {
+    --font-poppins: "Poppins", sans-serif;
     --radius: 0.625rem;
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);
@@ -136,4 +137,8 @@
     button {
         @apply hover:cursor-pointer
     }
+}
+
+body {
+    font-family: var(--font-poppins);
 }

@@ -15,7 +15,7 @@ const HomeBanner = () => {
         </p>
         <Link 
           href={'/shop'} 
-          className='inline-block mt-6 bg-shop_dark_red/90 text-white/90 px-5 py-2 rounded-md text-sm hover:bg-shop_dark_red transition'
+          className='inline-block mt-6 bg-shop_dark_red/90 text-white px-5 py-2 rounded-md text-sm hover:bg-shop_dark_red transition font-bold'
         >
           Buy Now
         </Link>

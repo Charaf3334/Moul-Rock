@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from "./Container"
-import { Logo, Logo2 } from "@/components/Logo";
+import { Logo } from "@/components/Logo";
 import HeaderMenu from './HeaderMenu'
 import SearchBar from './SearchBar'
 import CardIcon from './CartIcon'
