@@ -18,5 +18,5 @@ export const categoriesData = [
     {title: 'T-Shirts', href: '/tshirts'},
     {title: 'Hoodies', href: '/hoodies'},
     {title: 'Hats', href: '/hats'},
-    {title: 'Jewelry', href: '/Jewelry'},
+    {title: 'Jewelry', href: '/jewelry'},
 ]
