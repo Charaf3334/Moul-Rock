@@ -32,7 +32,7 @@ export const blogType = defineType({
         }),
         defineField({
             name: 'publishedAt',
-            type: 'datetime,'
+            type: 'datetime'
         }),
         defineField({
             name: 'isLatest',
