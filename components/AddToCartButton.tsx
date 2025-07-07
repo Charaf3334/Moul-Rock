@@ -17,7 +17,7 @@ const AddToCartButton = ({product, className}: Props) => {
     }
   return (
     <div>
-        <Button onClick={handleAddToCart} disabled={isOutOfStock} className={cn('w-full bg-shop_dark_red/80 text-shop_light_bg shadow-none border border-shop_dark_red/80 font-semibold tracking-wide hover:text-white hover:bg-shop_dark_red hover:border-shop_dark_red hoverEffect', className)} >
+        <Button onClick={handleAddToCart} disabled={isOutOfStock} className={cn('w-full mt-2 bg-shop_dark_red/80 text-shop_light_bg shadow-none border border-shop_dark_red/80 font-semibold tracking-wide hover:text-white hover:bg-shop_dark_red hover:border-shop_dark_red hoverEffect', className)} >
             <ShoppingBag /> {isOutOfStock ? 'Out of Stock' : 'Add to Cart'}
         </Button>
     </div>
