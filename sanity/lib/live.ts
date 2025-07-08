@@ -4,10 +4,15 @@
 import { defineLive } from "next-sanity";
 import { client } from './client'
 
+const token = process.env.SANITY_API_READ_TOKEN
+if (!token)
+  throw new Error('SANITY_API_READ_TOKEN is not set')
+
 export const { sanityFetch, SanityLive } = defineLive({ 
-  client: client.withConfig({ 
-    // Live content is currently only available on the experimental API
-    // https://www.sanity.io/docs/api-versioning
-    apiVersion: 'vX' 
-  }) 
+  client,
+  serverToken: token,
+  browserToken: token,
+  fetchOptions: {
+    revalidate: 0,
+  },
 });
