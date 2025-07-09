@@ -1,3 +1,6 @@
+import { GitCompareArrows, Headset, ShieldCheck, Truck } from 'lucide-react' // icons for the part thats below the bands!
+
+
 export const headerData = [
     {title: 'Home', href: '/'},
     {title: 'Shop', href: '/shop'},
@@ -26,4 +29,28 @@ export const productType = [
     { title: 'Appliances', value: 'appliances' },
     { title: 'Refrigerators', value: 'refrigerators' },
     { title: 'Others', value: 'others' },
+]
+
+export const extraData = [
+    {
+        title: 'Free Delivery',
+        description: 'Free shipping over 300 MAD',
+        icon: <Truck size={45} />,
+    },
+    {
+        title: 'Free Return',
+        description: 'Free shipping over 300 MAD',
+        icon: <GitCompareArrows size={45} />,
+    },
+    {
+        title: 'Customer Support',
+        description: 'Friendly 27/7 customer support',
+        icon: <Headset size={45} />,
+    },
+    {
+        title: 'Money Back Guarantee',
+        description: 'Quality checked by our team',
+        icon: <ShieldCheck size={45} />,
+    },
+    
 ]
